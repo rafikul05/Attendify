@@ -1,0 +1,78 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+}
+
+#logbox{
+    width: 300px;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.lab{
+    display: block;
+    position: absolute;
+    margin: 0 0 0 4px;
+}
+.inp{
+    height: 3.5rem;
+    width: 20rem;
+    background-color: rgba(255, 255, 255, 0.08);
+    border: none;
+    text-decoration: none;
+    padding: 0.9rem 0 0 0.9rem;
+    font-size: 17px;
+    color: rgb(0, 0, 0);
+    
+}
+.inp:hover{
+    border: solid black 1px;
+    border-radius: 4px;
+}
+
+.Inbox{
+    background-color: rgba(0,0,0,0.08);
+    border-radius: 4px;
+    margin: 15px;
+}
+
+.Login{
+    height: 3.5rem;
+    width: 21rem;
+    background-color: rgba(0,0,0,14);
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font-weight:bolder;
+    
+}
+
+.text1{
+    color: blue;
+    font-size:17px ;
+    text-decoration: underline;
+    margin: 20px 0 0 0;
+    
+}
+#text2,#text3{
+    font-family: "afacad";
+}
+#text4{
+    font-family: "Abril fatface";
+    font-weight: 700;
+}
+#text2{
+    color: rgb(131, 131, 131);
+}
