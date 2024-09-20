@@ -13,12 +13,14 @@ body{
 }
 
 #logbox{
-    width: 300px;
-    height: 50vh;
+    width: 400px;
+    height: 65vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+
 }
 
 .lab{
@@ -56,6 +58,7 @@ body{
     border-radius: 6px;
     color: white;
     font-weight:bolder;
+    margin-left: 15px;
     
 }
 
