@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,7 +22,7 @@
             <h3 id="text2">as</h3>
             <h1 id="text3">Teacher</h1>
             
-        <form action="connection.php" method="post"> 
+        <form action="T_loginin.php" method="post"> 
 
                                 <!--User input section-->
             <div class="Inbox">
@@ -34,7 +36,7 @@
                 type="text"
                 class="inp" 
                 id="Username" 
-                name="Username" 
+                name="name" 
                 autocomplete="on">
 
             </div>
@@ -50,17 +52,17 @@
                 type="password" 
                 class="inp" 
                 id="Password" 
-                name="Password">
+                name="pass">
             </div> 
-        </form>
-        <input 
-            type="button" 
-            value="Login" 
-            class="Login"
-            name="Login"
-            id="text3">    
-           
-
+            <a href="/src/teacher/T_MainPage/Home.html">
+                <input 
+                    type="submit" 
+                    value="submit" 
+                    class="Login"
+                    name="submit"
+                    id="text3">    
+            </a>
+        </form>    
         <a href="">
             <h2 class="text1" id="text3">Forgot Password?</h2>
         </a> 
@@ -69,3 +71,4 @@
    
 </body>
 </html>
+

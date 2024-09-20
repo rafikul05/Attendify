@@ -8,45 +8,51 @@
 </head>
 <body>
     <div class="main">
-        <h1 >Create an account</h1>
+        <h1 id="first">Create an account</h1>
         <P id="p">Track your attendence</P> <br ><br>
+        <form action="signUp.php" method="post">
+            <div class="butt">
+                <p>You are:  </p>
+                <label class="lab" for="teacher">Teacher</label>
+                <input type="radio" value="Teacher" id="teacher" name="profession" >
+                <lable  class="labb" for="student">Student</lable>
+                <input type="radio" value="Student" id="student" name="profession">
+            </div>  
 
-        <div class="butt">
-            <p>You are:  </p>
-            <label class="lab" for="teacher">Teacher</label>
-            <input type="radio" value="teacher" id="teacher" name="Teacher" >
-            <lable  class="labb" for="student">Student</lable>
-            <input type="radio" value="student" id="student" name="Student">
-        </div>  
-
-
-        <div class="inp">
-            <input type="text" placeholder="Name" class="reg" >
-            <input type="text" placeholder="GU rollno"class="reg" ">
-            <input type="int" placeholder="phone no" class="reg">
-            <input type="text" id="dep" placeholder="Department" class="reg">
-            <select value="semester" id="sem">
-                <option>semester</option>
-                <option>1st</option>
-                <option>2st</option>
-                <option>3st</option>
-                <option>4st</option>
-                <option>5st</option>
-                <option>6t</option>
-            </select>
-            <input type="Password" placeholder="Password" class="reg">
-            <input type="password" placeholder="password" class="reg">
-        </div>
-
-
-        <div class="sub">
-            <input class="sig" type="button" value="sign up" name="Sign Up">
-        </div>
-
+       
+            <div class="inp">
+                <input type="text" name="name" placeholder="Name" class="reg" required >
+                <input type="text" name="GUroll" placeholder="GU rollno"class="reg" required>
+                <input type="int" name="phone" placeholder="phone no" class="reg" required>
+                <input type="text" name="department" id="dep" placeholder="Department" class="reg" required>
+                <select value="sem" name="sem" id="sem" required>
+                    <option>semester</option>
+                    <option>1st</option>
+                    <option>2st</option>
+                    <option>3st</option>
+                    <option>4st</option>
+                    <option>5st</option>
+                    <option>6t</option>
+                </select>
+                <input type="Password" name="pass" placeholder="Password" class="reg" required>
+                <input type="password" name="confirmP" placeholder="confirm password" class="reg" required>
+                
+            </div>
+            
+            <a class="subbut" href="/src/student/S_loginPage/S_login.html">
+                <div class="sub">
+                
+                        <button class="subbut">
+                            <input class="sig" type="submit" name="submit">
+                        </button>
+                </div>
+            </a>    
+        </form>
 
 
 
 
     </div>
+    <script src="siignUp.js" defer></script>
 </body>
 </html>
